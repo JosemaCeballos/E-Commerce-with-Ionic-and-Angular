@@ -1,0 +1,32 @@
+.center{
+    width: 75%;
+    margin: 0px auto;
+}
+
+
+#content{
+    width: 70%;
+    float:left;
+    min-height: 650px;
+    margin-right: 20px;
+}
+
+@media (max-width: 1488px){
+    /*Se ejecutarán estos estilos*/
+    .center{
+        width: 85%;
+    }
+}
+
+@media (max-width: 1314px){
+    .center{
+        width: 95%;
+    }
+}
+
+@media (max-width: 813px){
+    #content{
+        float:none;
+        width: 100%;
+    }
+}

@@ -1,0 +1,14 @@
+<article class="article-item" id="article-template">
+  <div class="image-wrap">
+    <img
+      src="{{ product.image.replace('SL75', 'SL500') }}"
+      alt="{{ product.name }}"
+    />
+  </div>
+
+  <h2>{{ product.name.length > 0 ? product.name.slice(0, 150) + '...' : "" }}</h2>
+  <span class="date">{{ product.brand }}</span>
+  <a>Leer más</a>
+  <button>BUY</button>
+  <div class="clearfix"></div>
+</article>
