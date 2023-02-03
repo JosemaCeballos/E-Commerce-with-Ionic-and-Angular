@@ -11,11 +11,11 @@ export class SidebarComponent implements OnDestroy {
   mobileQuery: MediaQueryList;
 
   fillerNav = [
-    { name: 'Login', url: '/user' },
-    { name: 'Home', url: '/' },
-    { name: 'Store', url: '/store' },
-    { name: 'Favorites', url: '/favorites' },
-    { name: 'Cart', url: '/cart' }
+    { name: 'Login', url: '/user', icon: 'account_circle' },
+    { name: 'Home', url: '/', icon: 'home' },
+    { name: 'Store', url: '/store', icon: 'store' },
+    { name: 'Favorites', url: '/favorites', icon: 'favorite' },
+    { name: 'Cart', url: '/cart', icon: 'shopping_cart' }
   ]
 
   private _mobileQueryListener: () => void;

@@ -9,7 +9,7 @@ import {ProductService} from "../../services/products.service"
   providers: [ProductService]
 })
 export class StoreComponent implements OnInit {
-  public allProducts!: any;
+  public allProducts!: ProductsModel[];
 
   constructor(private _productService: ProductService) {}
 

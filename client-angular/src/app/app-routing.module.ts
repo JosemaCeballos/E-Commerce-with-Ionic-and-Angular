@@ -6,11 +6,13 @@ import { StoreComponent } from './components/store/store.component';
 import { FavoritesComponent } from './components/favorites/favorites.component';
 import { UserOrdersComponent } from './components/user-orders/user-orders.component';
 import { CartComponent } from './components/cart/cart.component';
+import { ProductByIdComponent } from './components/product-by-id/product-by-id.component';
 
 const appRoutes: Routes = [
   { path: "", component: HomeComponent },
   { path: "user", component: UserOrdersComponent },
   { path: "store", component: StoreComponent },
+  { path: "store/:id", component: ProductByIdComponent},
   { path: "favorites", component: FavoritesComponent },
   { path: "cart", component: CartComponent }
 ];

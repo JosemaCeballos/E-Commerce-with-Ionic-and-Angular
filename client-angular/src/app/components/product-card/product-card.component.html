@@ -1,14 +1,19 @@
-<article class="article-item" id="article-template">
+<article
+  class="article-item"
+  id="article-template"
+  [routerLink]="['/store/' + product.id]"
+>
   <div class="image-wrap">
     <img
-      src="{{ product.image.replace('SL75', 'SL500') }}"
+      src="{{ product.image.replace('SL75', 'SL450') }}"
       alt="{{ product.name }}"
     />
   </div>
 
-  <h2>{{ product.name.length > 0 ? product.name.slice(0, 150) + '...' : "" }}</h2>
+  <h2>
+    {{ product.name.length > 0 ? product.name.slice(0, 150) + "..." : "" }}
+  </h2>
   <span class="date">{{ product.brand }}</span>
-  <a>Leer más</a>
-  <button>BUY</button>
+  <a class="letter">${{ product.price }}</a>
   <div class="clearfix"></div>
 </article>

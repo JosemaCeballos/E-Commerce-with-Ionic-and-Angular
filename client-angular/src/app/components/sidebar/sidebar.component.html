@@ -3,7 +3,7 @@
     <button mat-icon-button (click)="snav.toggle()">
       <mat-icon>menu</mat-icon>
     </button>
-    <h1 class="example-app-name">Chilly</h1>
+    <h1 class="example-app-name">Chilly - Build your Dream</h1>
   </mat-toolbar>
 
   <mat-sidenav-container
@@ -18,7 +18,9 @@
     >
       <mat-nav-list>
         <div *ngFor="let nav of fillerNav">
-          <a mat-list-item (click)="goSearch(nav.url)">{{ nav.name }}</a>
+          <a mat-list-item (click)="goSearch(nav.url)" class="example-side"
+            ><span class="material-icons blue300"> {{nav.icon}} </span>{{ nav.name }}</a
+          >
         </div>
       </mat-nav-list>
     </mat-sidenav>

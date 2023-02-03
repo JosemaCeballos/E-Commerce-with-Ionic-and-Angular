@@ -17,13 +17,14 @@ import { CartComponent } from './components/cart/cart.component';
 import { FavoritesComponent } from './components/favorites/favorites.component';
 import { UserOrdersComponent } from './components/user-orders/user-orders.component';
 import { ProductCardComponent } from './components/product-card/product-card.component';
+import { ProductByIdComponent } from './components/product-by-id/product-by-id.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     LoginAuth0Component,
     SidebarComponent,
-    HomeComponent, StoreComponent, CartComponent, FavoritesComponent, UserOrdersComponent, ProductCardComponent
+    HomeComponent, StoreComponent, CartComponent, FavoritesComponent, UserOrdersComponent, ProductCardComponent, ProductByIdComponent
   ],
   imports: [
     BrowserModule,

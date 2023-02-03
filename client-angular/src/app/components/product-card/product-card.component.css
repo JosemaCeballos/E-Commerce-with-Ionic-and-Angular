@@ -48,3 +48,7 @@
 .article-item a:hover{
     text-decoration: underline;
 }
+
+.letter{
+    font-size: 20px;
+}
